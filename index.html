@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Tipografías Oficiales TB1: Montserrat (Títulos) e Inter (Cuerpo y Datos) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
@@ -28,105 +27,97 @@
   </script>
   <title>MiTallaPe - La certeza matemática del estilo (Versión A)</title>
 </head>
-<body class="bg-gradient-to-br from-slate-50 via-white to-cyan-50/60 font-sans text-slate-800 text-base">
+<body class="bg-gradient-to-br from-slate-50 via-white to-cyan-50/60 font-sans text-slate-800 text-base flex flex-col min-h-screen">
 
-  <!-- Barra de Navegación -->
-  <header class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center border-b border-slate-200/80 bg-white/80 backdrop-blur sticky top-0 z-50">
-    <div class="flex items-center gap-3.5">
-      <img src="MiTallaPe-removebg-preview.png" alt="Robot Sastre MiTallaPe" class="w-14 h-14 object-contain drop-shadow-sm">
+  <!-- Barra de Navegación Responsive -->
+  <header class="max-w-7xl w-full mx-auto px-4 sm:px-6 py-4 sm:py-6 flex flex-col md:flex-row justify-between items-center gap-4 border-b border-slate-200/80 bg-white/90 backdrop-blur sticky top-0 z-50 shadow-xs">
+    <div class="flex items-center gap-3">
+      <img src="MiTallaPe-removebg-preview.png" alt="Robot Sastre MiTallaPe" class="w-12 h-12 sm:w-14 sm:h-14 object-contain">
       <div>
-        <span class="font-heading text-2xl md:text-3xl font-black text-navy-800 tracking-tight">MiTalla<span class="text-cyan-500">Pe</span></span>
-        <p class="text-xs md:text-sm text-slate-500 -mt-1 font-semibold">Tu calce perfecto, al primer click.</p>
+        <span class="font-heading text-xl sm:text-2xl md:text-3xl font-black text-navy-800 tracking-tight">MiTalla<span class="text-cyan-500">Pe</span></span>
+        <p class="text-[11px] sm:text-xs text-slate-500 -mt-1 font-semibold">Tu calce perfecto, al primer click.</p>
       </div>
     </div>
-    <nav class="hidden md:flex gap-8 text-base font-semibold text-slate-600 items-center">
-      <a href="#beneficios" class="hover:text-cyan-600 transition">¿Qué obtendrás?</a>
-      <a href="#testimonios" class="hover:text-cyan-600 transition">Casos Reales</a>
-      <a href="version-b.html" class="text-sm bg-navy-800 text-white px-4 py-2 rounded-full font-bold hover:bg-cyan-600 transition shadow-sm">
-        Cambiar a Versión B (El Mago) →
+    
+    <!-- Menú con Preguntas Frecuentes -->
+    <nav class="flex flex-wrap justify-center gap-4 sm:gap-6 text-sm sm:text-base font-semibold text-slate-600 items-center">
+      <a href="#beneficios" class="hover:text-cyan-600 transition">Beneficios</a>
+      <a href="#testimonios" class="hover:text-cyan-600 transition">Testimonios</a>
+      <a href="#faq" class="hover:text-cyan-600 transition">Preguntas Frecuentes</a>
+      <a href="version-b.html" class="text-xs sm:text-sm bg-navy-800 text-white px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full font-bold hover:bg-cyan-600 transition shadow-sm">
+        Versión B →
       </a>
     </nav>
-    <a href="#formulario" class="bg-emerald-500 text-white font-heading text-sm md:text-base font-extrabold px-6 py-3 rounded-full hover:bg-emerald-600 transition shadow-lg shadow-emerald-500/25">
-      CREAR PASAPORTE GRATIS
+
+    <a href="#formulario" class="hidden lg:inline-block bg-emerald-500 text-white font-heading text-sm font-extrabold px-5 py-2.5 rounded-full hover:bg-emerald-600 transition shadow-md shadow-emerald-500/20">
+      CREAR PASAPORTE
     </a>
   </header>
 
-  <!-- Sección Hero (Arquetipo: El Sabio - Verdad Matemática y Datos Exactos) -->
-  <section class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+  <!-- Sección Hero Responsive -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center flex-grow">
     
-    <!-- Textos + Foto Izquierda (7 columnas) -->
-    <div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-      <div class="md:col-span-7">
-        <div class="inline-flex items-center gap-2 bg-cyan-50 border border-cyan-200 text-navy-800 text-xs md:text-sm font-bold px-4 py-1.5 rounded-full mb-5">
+    <!-- Textos e Imagen Izquierda -->
+    <div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-12 gap-6 lg:gap-8 items-center">
+      <div class="md:col-span-7 text-center md:text-left">
+        <div class="inline-flex items-center gap-2 bg-cyan-50 border border-cyan-200 text-navy-800 text-xs sm:text-sm font-bold px-3 py-1 rounded-full mb-4">
           <span>📐</span> LA CERTEZA MATEMÁTICA DEL ESTILO
         </div>
-        <h1 class="font-heading text-4xl md:text-5xl font-black text-navy-800 leading-tight mb-6">
+        <h1 class="font-heading text-3xl sm:text-4xl md:text-5xl font-black text-navy-800 leading-tight mb-4 sm:mb-6">
           ¿La talla que eliges en Instagram <span class="text-cyan-500">es realmente la tuya?</span>
         </h1>
-        <p class="text-lg text-slate-600 mb-6 leading-relaxed">
-          Deja de pedir tablas de medidas por DM. Nuestro <strong>Motor Predictivo de IA</strong> cruza tus medidas exactas (busto, cintura y cadera) con el molde técnico de la tienda en milisegundos.
+        <p class="text-base sm:text-lg text-slate-600 mb-6 leading-relaxed">
+          Deja de pedir tablas de medidas por DM. Nuestro <strong>Motor Predictivo de IA</strong> cruza tus medidas exactas con el molde técnico de la tienda en milisegundos.
         </p>
-        <ul class="space-y-4 mb-8 text-base md:text-lg">
+        <ul class="space-y-3 mb-6 text-sm sm:text-base text-left">
           <li class="flex items-start text-slate-700 font-semibold">
-            <span class="bg-emerald-100 text-emerald-600 font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 shrink-0">✔</span>
-            <span><strong>Semáforo Predictivo:</strong> Visualiza tu 98% Fit Match antes de transferir por Yape o Plin.</span>
+            <span class="bg-emerald-100 text-emerald-600 font-bold rounded-full w-5 h-5 flex items-center justify-center mr-2.5 mt-0.5 shrink-0">✔</span>
+            <span><strong>Semáforo Predictivo:</strong> Visualiza tu 98% Fit Match antes de pagar.</span>
           </li>
           <li class="flex items-start text-slate-700 font-semibold">
-            <span class="bg-emerald-100 text-emerald-600 font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 shrink-0">✔</span>
-            <span><strong>Ahorro real:</strong> Elimina los S/ 15 extra en motorizados por devoluciones logísticas.</span>
-          </li>
-          <li class="flex items-start text-slate-700 font-semibold">
-            <span class="bg-emerald-100 text-emerald-600 font-bold rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 shrink-0">✔</span>
-            <span><strong>Pasaporte Tokenizado:</strong> Mídete una sola vez y úsalo en todas nuestras marcas aliadas.</span>
+            <span class="bg-emerald-100 text-emerald-600 font-bold rounded-full w-5 h-5 flex items-center justify-center mr-2.5 mt-0.5 shrink-0">✔</span>
+            <span><strong>Ahorro real:</strong> Elimina los S/ 15 extra en motorizados por devoluciones.</span>
           </li>
         </ul>
 
-        <!-- Prueba Social Estadística TB1 -->
-        <div class="flex items-center gap-4 bg-white p-4 rounded-2xl border border-slate-200 shadow-sm">
-          <div class="bg-navy-800 text-cyan-400 font-heading font-black text-xl px-3.5 py-2 rounded-xl shrink-0">
+        <div class="flex items-center gap-3 bg-white p-3.5 rounded-2xl border border-slate-200 shadow-xs text-left">
+          <div class="bg-navy-800 text-cyan-400 font-heading font-black text-base sm:text-lg px-3 py-1.5 rounded-xl shrink-0">
             96.2%
           </div>
           <div>
-            <div class="text-amber-400 text-sm">★★★★★</div>
-            <p class="text-sm md:text-base text-slate-700 font-medium">De compradoras en Lima validan su talla con IA antes de pagar.</p>
+            <div class="text-amber-400 text-xs">★★★★★</div>
+            <p class="text-xs sm:text-sm text-slate-700 font-medium">De compradoras validan su talla con IA en Lima.</p>
           </div>
         </div>
       </div>
 
-      <!-- Imagen Hero Central con Sello Verificado -->
-      <div class="relative md:col-span-5">
-        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80" alt="Compradora validando su talla con MiTallaPe" class="rounded-3xl shadow-2xl object-cover h-[520px] w-full border-4 border-white">
+      <!-- Imagen Central -->
+      <div class="relative md:col-span-5 max-w-sm mx-auto md:max-w-none w-full">
+        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80" alt="Compradora" class="rounded-3xl shadow-xl object-cover h-[420px] sm:h-[480px] w-full border-4 border-white">
         
-        <!-- Tarjeta Flotante Semáforo Verde -->
-        <div class="absolute -bottom-5 -left-4 bg-white px-5 py-3.5 rounded-2xl shadow-xl border-2 border-emerald-500 flex items-center gap-3">
-          <span class="w-4 h-4 rounded-full bg-emerald-500 animate-ping"></span>
+        <div class="absolute -bottom-4 -left-2 sm:-left-4 bg-white px-4 py-3 rounded-2xl shadow-lg border-2 border-emerald-500 flex items-center gap-2.5">
+          <span class="w-3.5 h-3.5 rounded-full bg-emerald-500 animate-ping"></span>
           <div>
-            <span class="block font-heading text-sm md:text-base font-black text-navy-800">98% FIT MATCH</span>
-            <span class="block text-xs text-emerald-600 font-bold">Talla M • Sello Verificado</span>
+            <span class="block font-heading text-xs sm:text-sm font-black text-navy-800">98% FIT MATCH</span>
+            <span class="block text-[10px] text-emerald-600 font-bold">Talla M Verificada</span>
           </div>
-        </div>
-
-        <!-- Badge Robot Sastre Superior -->
-        <div class="absolute -top-5 -right-4 bg-navy-800 text-white px-4 py-2.5 rounded-2xl shadow-xl border border-cyan-400 flex items-center gap-2">
-          <img src="MiTallaPe-removebg-preview.png" alt="Robot Sastre" class="w-8 h-8 object-contain">
-          <span class="text-xs font-bold text-cyan-300">IA + Sastres Locales</span>
         </div>
       </div>
     </div>
 
-    <!-- Formulario Google Forms Derecha (5 columnas) -->
-    <div id="formulario" class="lg:col-span-5 bg-white p-6 sm:p-8 rounded-3xl shadow-2xl border-2 border-cyan-400/60 relative">
-      <div class="text-center mb-4">
-        <span class="text-xs font-extrabold uppercase tracking-wider text-cyan-600 bg-cyan-50 px-3 py-1 rounded-full">100% Web App • Sin Descargas</span>
-        <h3 class="font-heading text-2xl font-black text-navy-800 mt-2">Crea tu Pasaporte de Tallas</h3>
-        <p class="text-sm md:text-base text-slate-600 mt-1">Registra tus datos y obtén tu diagnóstico antropométrico gratuito.</p>
+    <!-- Formulario Derecha -->
+    <div id="formulario" class="lg:col-span-5 bg-white p-4 sm:p-6 md:p-8 rounded-3xl shadow-2xl border-2 border-cyan-400/60">
+      <div class="text-center mb-3">
+        <span class="text-[11px] font-extrabold uppercase tracking-wider text-cyan-600 bg-cyan-50 px-3 py-0.5 rounded-full">100% Web App</span>
+        <h3 class="font-heading text-xl sm:text-2xl font-black text-navy-800 mt-2">Crea tu Pasaporte de Tallas</h3>
+        <p class="text-xs sm:text-sm text-slate-600 mt-1">Obtén tu diagnóstico antropométrico gratuito.</p>
       </div>
 
       <div class="overflow-hidden rounded-2xl border border-slate-100">
         <iframe 
           src="https://docs.google.com/forms/d/e/1FAIpQLSdBu5rgs92Swqs6sKzQbCRHuiyr3dTeqVUn9uVtFYS6M9G9VQ/viewform?embedded=true" 
           width="100%" 
-          height="720" 
+          height="600" 
           frameborder="0" 
           marginheight="0" 
           marginwidth="0"
@@ -135,75 +126,135 @@
         </iframe>
       </div>
 
-      <p class="text-xs md:text-sm text-center text-slate-500 mt-3 flex justify-center items-center gap-1.5 font-medium">
+      <p class="text-[11px] text-center text-slate-500 mt-3 font-medium">
         🔒 Protegido bajo la Ley N° 29733 de Protección de Datos Personales.
       </p>
     </div>
 
   </section>
 
-  <!-- Sección ¿Qué obtendrás? (Pilares del Ecosistema TB1) -->
-  <section id="beneficios" class="max-w-7xl mx-auto px-6 py-16">
-    <div class="text-center max-w-3xl mx-auto mb-12">
-      <h2 class="font-heading text-3xl md:text-4xl font-black text-navy-800 mb-3">¿Qué obtendrás con tu Pasaporte?</h2>
-      <p class="text-base md:text-lg text-slate-600">Un ecosistema phygital completo para que la ropa encaje en ti, y no tú en la ropa.</p>
+  <!-- Sección Beneficios -->
+  <section id="beneficios" class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 bg-slate-100/50 rounded-3xl my-8">
+    <div class="text-center max-w-3xl mx-auto mb-10">
+      <h2 class="font-heading text-2xl sm:text-3xl md:text-4xl font-black text-navy-800 mb-2">¿Qué obtendrás con tu Pasaporte?</h2>
+      <p class="text-sm sm:text-base text-slate-600">Un ecosistema phygital completo para que la ropa encaje en ti.</p>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-      <div class="bg-white p-8 rounded-3xl shadow-md border border-slate-100 hover:border-cyan-400 transition text-center">
-        <div class="w-16 h-16 bg-navy-800 text-cyan-400 rounded-2xl flex items-center justify-center mx-auto mb-5 text-3xl shadow-md">📐</div>
-        <h4 class="font-heading font-extrabold text-lg md:text-xl text-navy-800 mb-3">Perfil Antropométrico</h4>
-        <p class="text-sm md:text-base text-slate-600 leading-relaxed">Tokenizamos tus centímetros reales de busto, cintura y cadera para que te midas una sola vez en la vida.</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 text-center">
+        <div class="w-12 h-12 bg-navy-800 text-cyan-400 rounded-xl flex items-center justify-center mx-auto mb-4 text-2xl">📐</div>
+        <h4 class="font-heading font-bold text-base text-navy-800 mb-2">Perfil Antropométrico</h4>
+        <p class="text-xs sm:text-sm text-slate-600">Tokenizamos tus medidas reales para que te midas una sola vez.</p>
       </div>
-      <div class="bg-white p-8 rounded-3xl shadow-md border border-slate-100 hover:border-emerald-400 transition text-center">
-        <div class="w-16 h-16 bg-emerald-500 text-white rounded-2xl flex items-center justify-center mx-auto mb-5 text-3xl shadow-md">🚦</div>
-        <h4 class="font-heading font-extrabold text-lg md:text-xl text-navy-800 mb-3">Semáforo Fit Match</h4>
-        <p class="text-sm md:text-base text-slate-600 leading-relaxed">Traducimos las engañosas letras "S, M, L" en un porcentaje exacto de compatibilidad con tu cuerpo.</p>
+      <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 text-center">
+        <div class="w-12 h-12 bg-emerald-500 text-white rounded-xl flex items-center justify-center mx-auto mb-4 text-2xl">🚦</div>
+        <h4 class="font-heading font-bold text-base text-navy-800 mb-2">Semáforo Fit Match</h4>
+        <p class="text-xs sm:text-sm text-slate-600">Traducimos las letras S, M, L en un porcentaje exacto de compatibilidad.</p>
       </div>
-      <div class="bg-white p-8 rounded-3xl shadow-md border border-slate-100 hover:border-cyan-400 transition text-center">
-        <div class="w-16 h-16 bg-cyan-500 text-white rounded-2xl flex items-center justify-center mx-auto mb-5 text-3xl shadow-md">✂️</div>
-        <h4 class="font-heading font-extrabold text-lg md:text-xl text-navy-800 mb-3">Red P2P MiPartners</h4>
-        <p class="text-sm md:text-base text-slate-600 leading-relaxed">¿Match del 90% por basta larga? Te conectamos con un sastre verificado de tu distrito para un ajuste pre-envío.</p>
+      <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 text-center">
+        <div class="w-12 h-12 bg-cyan-500 text-white rounded-xl flex items-center justify-center mx-auto mb-4 text-2xl">✂️</div>
+        <h4 class="font-heading font-bold text-base text-navy-800 mb-2">Red MiPartners</h4>
+        <p class="text-xs sm:text-sm text-slate-600">Te conectamos con un sastre verificado de tu distrito para micro-ajustes.</p>
       </div>
-      <div class="bg-white p-8 rounded-3xl shadow-md border border-slate-100 hover:border-emerald-400 transition text-center">
-        <div class="w-16 h-16 bg-emerald-100 text-emerald-700 rounded-2xl flex items-center justify-center mx-auto mb-5 text-3xl shadow-md">♻️</div>
-        <h4 class="font-heading font-extrabold text-lg md:text-xl text-navy-800 mb-3">Comunidad MiTwins</h4>
-        <p class="text-sm md:text-base text-slate-600 leading-relaxed">Marketplace circular que te conecta con "gemelas anatómicas" para revender ropa sin uso de tu clóset.</p>
+      <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 text-center">
+        <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center mx-auto mb-4 text-2xl">♻️</div>
+        <h4 class="font-heading font-bold text-base text-navy-800 mb-2">Comunidad MiTwins</h4>
+        <p class="text-xs sm:text-sm text-slate-600">Marketplace circular que te conecta con gemelas anatómicas para revender ropa.</p>
       </div>
     </div>
   </section>
 
-  <!-- Sección Testimonios (Buyer Persona: Camila Ramos) y Banner Final -->
-  <section id="testimonios" class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
-    <div class="bg-white p-8 md:p-10 rounded-3xl shadow-md border border-slate-200 flex flex-col justify-center">
-      <div class="flex items-center justify-between mb-6">
-        <h3 class="font-heading text-2xl font-extrabold text-navy-800">Compradoras que ya no adivinan 🩵</h3>
-        <span class="bg-emerald-100 text-emerald-700 text-xs font-extrabold px-3 py-1 rounded-full">98% Match Real</span>
+  <!-- Sección Preguntas Frecuentes (FAQ) -->
+  <section id="faq" class="max-w-4xl mx-auto px-4 sm:px-6 py-12">
+    <h2 class="font-heading text-2xl sm:text-3xl font-black text-center text-navy-800 mb-8">Preguntas Frecuentes</h2>
+    <div class="space-y-4">
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs">
+        <h4 class="font-bold text-navy-800 text-sm sm:text-base mb-1">¿El test de medidas y la creación del pasaporte tienen algún costo?</h4>
+        <p class="text-xs sm:text-sm text-slate-600">No, es 100% gratuito para todas las compradoras digitales que buscan asegurar su talla en marcas independientes.</p>
       </div>
-      <div class="flex items-start gap-5">
-        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&q=80" alt="Camila Ramos" class="w-16 h-16 rounded-full object-cover border-2 border-cyan-400 shrink-0">
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs">
+        <h4 class="font-bold text-navy-800 text-sm sm:text-base mb-1">¿Cómo protege MiTallaPe mis datos personales y corporales?</h4>
+        <p class="text-xs sm:text-sm text-slate-600">Tus medidas antropométricas se tokenizan bajo estrictos estándares de seguridad cumpliendo plenamente con la Ley N° 29733.</p>
+      </div>
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs">
+        <h4 class="font-bold text-sm sm:text-base mb-1">¿Qué pasa si la prenda requiere un ajuste mínimo a pesar del Fit Match?</h4>
+        <p class="text-xs sm:text-sm text-slate-600">Nuestra red geolocalizada "MiPartners" te conecta con un sastre local certificado en tu distrito para solucionar el ajuste antes del envío.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Testimonios -->
+  <section id="testimonios" class="max-w-7xl mx-auto px-4 sm:px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+    <div class="bg-white p-6 sm:p-8 rounded-3xl shadow-sm border border-slate-200 flex flex-col justify-center">
+      <div class="flex items-center justify-between mb-4">
+        <h3 class="font-heading text-lg sm:text-xl font-extrabold text-navy-800">Compradoras que ya no adivinan 🩵</h3>
+        <span class="bg-emerald-100 text-emerald-700 text-[11px] font-extrabold px-2.5 py-0.5 rounded-full">98% Match</span>
+      </div>
+      <div class="flex items-start gap-4">
+        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&q=80" alt="Camila Ramos" class="w-14 h-14 rounded-full object-cover border-2 border-cyan-400 shrink-0">
         <div>
-          <div class="text-amber-400 text-lg mb-2">★★★★★</div>
-          <p class="text-base md:text-lg text-slate-600 italic mb-4 leading-relaxed">
-            "Antes abandonaba mis carritos en Instagram por miedo a gastar S/ 15 extra en motorizados de devolución. Con MiTallaPe compré un blazer local con 98% Fit Match y me quedó pintado al primer intento."
+          <div class="text-amber-400 text-sm mb-1">★★★★★</div>
+          <p class="text-xs sm:text-sm text-slate-600 italic mb-3">
+            "Antes abandonaba carritos en Instagram por miedo a gastar en motorizados de devolución. Con MiTallaPe compré un blazer local con 98% Fit Match y me quedó perfecto."
           </p>
-          <p class="font-heading text-base font-extrabold text-navy-800">Camila Ramos M. (24 años)</p>
-          <p class="text-sm text-slate-500 font-medium">Analista de Marketing Digital • Jesús María, Lima</p>
+          <p class="font-heading text-xs sm:text-sm font-extrabold text-navy-800">Camila Ramos M. (24 años)</p>
+          <p class="text-[11px] text-slate-500 font-medium">Jesús María, Lima</p>
         </div>
       </div>
     </div>
 
-    <div class="bg-navy-800 text-white p-8 md:p-10 rounded-3xl flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl relative overflow-hidden">
-      <div class="z-10">
-        <span class="bg-cyan-500/20 border border-cyan-400 text-cyan-300 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider">Pasaporte Universal 1-Click</span>
-        <h3 class="font-heading text-2xl md:text-3xl font-black mt-4 mb-3">La tecnología que hace que la moda encaje en ti</h3>
-        <p class="text-base text-slate-300 mb-6 leading-relaxed">Únete a las compradoras inteligentes en Lima y dile adiós a las prendas acumuladas con etiqueta en tu clóset.</p>
-        <a href="#formulario" class="inline-block bg-emerald-500 text-white font-heading font-extrabold text-sm md:text-base px-7 py-4 rounded-xl hover:bg-emerald-600 transition shadow-lg">
-          CALCULAR MI TALLA EXACTA AHORA
+    <div class="bg-navy-800 text-white p-6 sm:p-8 rounded-3xl flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl">
+      <div>
+        <span class="bg-cyan-500/20 border border-cyan-400 text-cyan-300 text-[10px] font-bold px-3 py-1 rounded-full uppercase">Pasaporte 1-Click</span>
+        <h3 class="font-heading text-xl sm:text-2xl font-black mt-3 mb-2">La tecnología que hace que la moda encaje en ti</h3>
+        <p class="text-xs sm:text-sm text-slate-300 mb-4">Únete a las compradoras inteligentes en Lima y dile adiós a las prendas acumuladas.</p>
+        <a href="#formulario" class="inline-block bg-emerald-500 text-white font-heading font-extrabold text-xs sm:text-sm px-5 py-2.5 rounded-xl hover:bg-emerald-600 transition">
+          CALCULAR MI TALLA
         </a>
       </div>
-      <img src="MiTallaPe-removebg-preview.png" alt="Mascota MiTallaPe" class="w-36 h-36 object-contain shrink-0 z-10 drop-shadow-lg">
+      <img src="MiTallaPe-removebg-preview.png" alt="Robot" class="w-28 h-28 sm:w-32 sm:h-32 object-contain shrink-0">
     </div>
   </section>
+
+  <!-- FOOTER PROFESIONAL -->
+  <footer class="bg-navy-900 text-slate-400 pt-12 pb-8 border-t border-navy-800 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 text-sm">
+      <div class="space-y-3">
+        <div class="flex items-center gap-2">
+          <img src="MiTallaPe-removebg-preview.png" alt="Logo" class="w-10 h-10 object-contain">
+          <span class="font-heading text-xl font-black text-white">MiTalla<span class="text-cyan-400">Pe</span></span>
+        </div>
+        <p class="text-xs text-slate-400">Ecosistema phygital de validación de tallas, IA predictiva y red P2P de sastres para el comercio de moda.</p>
+      </div>
+      <div>
+        <h5 class="font-heading text-white font-bold mb-3 text-base">Navegación</h5>
+        <ul class="space-y-2 text-xs">
+          <li><a href="#beneficios" class="hover:text-cyan-400 transition">Beneficios</a></li>
+          <li><a href="#faq" class="hover:text-cyan-400 transition">Preguntas Frecuentes</a></li>
+          <li><a href="#testimonios" class="hover:text-cyan-400 transition">Testimonios</a></li>
+          <li><a href="version-b.html" class="hover:text-cyan-400 transition">Cambiar a Versión B</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-heading text-white font-bold mb-3 text-base">Solución TB1</h5>
+        <ul class="space-y-2 text-xs">
+          <li>Pasaporte Antropométrico</li>
+          <li>Semáforo Fit Match (IA)</li>
+          <li>Red de Sastres MiPartners</li>
+          <li>Moda Circular MiTwins</li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-heading text-white font-bold mb-3 text-base">Contacto & Legal</h5>
+        <p class="text-xs text-slate-400 mb-2">Lima Metropolitana, Perú</p>
+        <p class="text-xs text-slate-400 mb-3">contacto@mitallape.com</p>
+        <p class="text-[11px] text-slate-500">Cumplimiento Ley N° 29733 de Protección de Datos Personales.</p>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 pt-6 border-t border-navy-800 text-center text-xs text-slate-500 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <p>© 2026 MiTallaPe. Todos los derechos reservados.</p>
+      <p>Technical Sales and Marketing • UPC Ingeniería de Software</p>
+    </div>
+  </footer>
 
 </body>
 </html>

@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Tipografías Oficiales TB1: Montserrat (Títulos) e Inter (Cuerpo y Datos) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
@@ -28,43 +27,47 @@
   </script>
   <title>MiTallaPe - Tu calce perfecto, al primer click (Versión B)</title>
 </head>
-<body class="bg-slate-50 font-sans text-slate-800 text-base">
+<body class="bg-slate-50 font-sans text-slate-800 text-base flex flex-col min-h-screen">
 
-  <!-- Barra de Navegación -->
-  <header class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center bg-white border-b border-slate-200 sticky top-0 z-50">
-    <div class="flex items-center gap-3.5">
-      <img src="MiTallaPe-removebg-preview.png" alt="Robot Sastre MiTallaPe" class="w-14 h-14 object-contain">
+  <!-- Barra de Navegación Responsive -->
+  <header class="max-w-7xl w-full mx-auto px-4 sm:px-6 py-4 sm:py-6 flex flex-col md:flex-row justify-between items-center gap-4 bg-white border-b border-slate-200 sticky top-0 z-50 shadow-xs">
+    <div class="flex items-center gap-3">
+      <img src="MiTallaPe-removebg-preview.png" alt="Robot Sastre MiTallaPe" class="w-12 h-12 sm:w-14 sm:h-14 object-contain">
       <div>
-        <span class="font-heading text-2xl md:text-3xl font-black text-navy-800">MiTalla<span class="text-cyan-500">Pe</span></span>
-        <p class="text-xs md:text-sm text-slate-500 -mt-1 font-semibold">La ropa debe encajar en ti, no tú en la ropa</p>
+        <span class="font-heading text-xl sm:text-2xl md:text-3xl font-black text-navy-800">MiTalla<span class="text-cyan-500">Pe</span></span>
+        <p class="text-[11px] sm:text-xs text-slate-500 -mt-1 font-semibold">La ropa debe encajar en ti, no tú en la ropa</p>
       </div>
     </div>
-    <div class="flex items-center gap-4">
-      <a href="index.html" class="text-sm bg-cyan-100 text-navy-800 px-5 py-2.5 rounded-full font-bold hover:bg-cyan-200 transition">
-        ← Volver a Versión A (El Sabio)
+    
+    <nav class="flex flex-wrap justify-center gap-4 sm:gap-6 text-sm sm:text-base font-semibold text-slate-600 items-center">
+      <a href="#caracteristicas" class="hover:text-cyan-600 transition">Transformación</a>
+      <a href="#faq" class="hover:text-cyan-600 transition">Preguntas Frecuentes</a>
+      <a href="#testimonios" class="hover:text-cyan-600 transition">Casos Reales</a>
+      <a href="index.html" class="text-xs sm:text-sm bg-cyan-100 text-navy-800 px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full font-bold hover:bg-cyan-200 transition">
+        ← Volver a Versión A
       </a>
-    </div>
+    </nav>
   </header>
 
-  <!-- Sección Hero en Azul Marino (Arquetipo: El Mago - Transformación sin Dolor, Formulario a la Izquierda) -->
-  <section class="bg-gradient-to-br from-navy-900 via-navy-800 to-sky-900 text-white py-12">
-    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+  <!-- Sección Hero (Formulario a la Izquierda) -->
+  <section class="bg-gradient-to-br from-navy-900 via-navy-800 to-sky-900 text-white py-10 sm:py-16 flex-grow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
       
-      <!-- Formulario Google Forms Izquierda (5 columnas) -->
-      <div id="formularioB" class="lg:col-span-5 bg-white text-slate-800 p-6 sm:p-8 rounded-3xl shadow-2xl border-4 border-cyan-400">
-        <div class="text-center mb-4">
-          <span class="text-xs md:text-sm font-extrabold text-emerald-700 bg-emerald-50 border border-emerald-200 px-4 py-1.5 rounded-full inline-block mb-3">
+      <!-- Formulario Google Forms Izquierda -->
+      <div id="formularioB" class="lg:col-span-5 bg-white text-slate-800 p-4 sm:p-6 md:p-8 rounded-3xl shadow-2xl border-4 border-cyan-400">
+        <div class="text-center mb-3">
+          <span class="text-[11px] sm:text-xs font-extrabold text-emerald-700 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full inline-block mb-2">
             ✨ 100% GRATIS • RÁPIDO • CERO DEVOLUCIONES
           </span>
-          <h3 class="font-heading text-2xl font-black text-navy-800">DESCUBRE TU FIT MATCH EN 3 PASOS</h3>
-          <p class="text-sm md:text-base text-slate-600 mt-1">Olvídate del miedo a equivocarte de talla antes de transferir.</p>
+          <h3 class="font-heading text-xl sm:text-2xl font-black text-navy-800">HAZ EL TEST BIOMÉTRICO</h3>
+          <p class="text-xs sm:text-sm text-slate-600 mt-1">Olvídate del miedo a equivocarte de talla antes de transferir.</p>
         </div>
 
         <div class="overflow-hidden rounded-2xl border border-slate-100">
           <iframe 
             src="https://docs.google.com/forms/d/e/1FAIpQLSdBu5rgs92Swqs6sKzQbCRHuiyr3dTeqVUn9uVtFYS6M9G9VQ/viewform?embedded=true" 
             width="100%" 
-            height="720" 
+            height="600" 
             frameborder="0" 
             marginheight="0" 
             marginwidth="0"
@@ -73,48 +76,40 @@
           </iframe>
         </div>
 
-        <p class="text-xs md:text-sm text-center text-slate-500 mt-3 font-medium">
+        <p class="text-[11px] text-center text-slate-500 mt-3 font-medium">
           🔒 Tus medidas se tokenizan con seguridad (Ley N° 29733).
         </p>
       </div>
 
-      <!-- Dolor Emocional + Foto Derecha (7 columnas) -->
-      <div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+      <!-- Dolor Emocional + Foto Derecha -->
+      <div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-12 gap-6 lg:gap-8 items-center text-center md:text-left">
         <div class="md:col-span-7">
-          <div class="inline-flex items-center gap-2 bg-cyan-500/20 border border-cyan-400 text-cyan-300 text-xs md:text-sm font-bold px-4 py-1.5 rounded-full mb-5">
+          <div class="inline-flex items-center gap-2 bg-cyan-500/20 border border-cyan-400 text-cyan-300 text-xs sm:text-sm font-bold px-3 py-1 rounded-full mb-4">
             <span>🪄</span> TU CALCE PERFECTO, AL PRIMER CLICK
           </div>
-          <h1 class="font-heading text-4xl md:text-5xl font-black text-white leading-tight mb-6">
+          <h1 class="font-heading text-3xl sm:text-4xl md:text-5xl font-black text-white leading-tight mb-4 sm:mb-6">
             ¿Cansada de comprar ropa online y <span class="text-cyan-400">frustrarte al abrir el paquete?</span>
           </h1>
-          <p class="text-lg text-slate-200 mb-6 leading-relaxed">
-            El <strong>80% de jóvenes en Lima</strong> ha recibido prendas que no le quedaron bien. Las tallas "estándar" de los talleres locales son una lotería que te hace perder tiempo y dinero en motorizados de cambio.
+          <p class="text-sm sm:text-base text-slate-200 mb-6 leading-relaxed">
+            El <strong>80% de jóvenes en Lima</strong> ha recibido prendas que no le quedaron bien. Las tallas "estándar" de los talleres locales son una lotería frustrante.
           </p>
           
-          <!-- Caja de Promesa de Transformación TB1 -->
-          <div class="bg-white/10 backdrop-blur p-5 rounded-2xl border border-cyan-400/40 mb-6">
-            <div class="flex items-center gap-4">
-              <img src="MiTallaPe-removebg-preview.png" alt="Robot Sastre" class="w-16 h-16 object-contain shrink-0">
+          <div class="bg-white/10 backdrop-blur p-4 sm:p-5 rounded-2xl border border-cyan-400/40 mb-6 text-left">
+            <div class="flex items-center gap-3 sm:gap-4">
+              <img src="MiTallaPe-removebg-preview.png" alt="Robot" class="w-12 h-12 sm:w-16 sm:h-16 object-contain shrink-0">
               <div>
-                <h4 class="font-heading font-bold text-cyan-300 text-base">Transformamos la duda en seguridad total</h4>
-                <p class="text-sm text-slate-200 mt-1">Nuestra tecnología predictiva hace que la ropa encaje perfectamente en ti antes de que pagues, eliminando las devoluciones casi por arte de magia.</p>
+                <h4 class="font-heading font-bold text-cyan-300 text-sm sm:text-base">Transformamos la duda en seguridad total</h4>
+                <p class="text-xs sm:text-sm text-slate-200 mt-0.5">La tecnología predictiva hace que la ropa encaje perfectamente en ti antes de pagar.</p>
               </div>
             </div>
           </div>
-
-          <div class="grid grid-cols-2 gap-4 text-sm font-semibold text-emerald-300">
-            <div class="flex items-center gap-2"><span>🟢</span> Sin fotos invasivas</div>
-            <div class="flex items-center gap-2"><span>🟢</span> Sin descargar apps</div>
-            <div class="flex items-center gap-2"><span>🟢</span> Sastres MiPartners</div>
-            <div class="flex items-center gap-2"><span>🟢</span> Reventa en MiTwins</div>
-          </div>
         </div>
 
-        <div class="relative md:col-span-5">
-          <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=600&q=80" alt="Comprando feliz sin devoluciones" class="rounded-3xl shadow-2xl object-cover h-[520px] w-full border-4 border-cyan-400/40">
-          <div class="absolute -bottom-5 right-4 bg-white text-navy-800 px-5 py-4 rounded-2xl shadow-xl border-2 border-emerald-500 text-center">
-            <p class="text-xs text-slate-500 font-bold uppercase">Sello de Talla Verificada</p>
-            <p class="font-heading text-base font-black text-emerald-600 mt-0.5">✔ Cero Estrés Post-Compra</p>
+        <div class="relative md:col-span-5 max-w-sm mx-auto md:max-w-none w-full">
+          <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=600&q=80" alt="Comprando feliz" class="rounded-3xl shadow-xl object-cover h-[420px] sm:h-[480px] w-full border-4 border-cyan-400/40">
+          <div class="absolute -bottom-4 right-2 sm:right-4 bg-white text-navy-800 px-4 py-3 rounded-2xl shadow-xl border-2 border-emerald-500 text-center">
+            <p class="text-[10px] text-slate-500 font-bold uppercase">Sello de Talla Verificada</p>
+            <p class="font-heading text-xs sm:text-sm font-black text-emerald-600 mt-0.5">✔ Cero Estrés Post-Compra</p>
           </div>
         </div>
       </div>
@@ -122,64 +117,124 @@
     </div>
   </section>
 
-  <!-- Sección ¿Qué obtendrás con el test? -->
-  <section class="max-w-7xl mx-auto px-6 py-16">
-    <h2 class="font-heading text-3xl md:text-4xl font-black text-center text-navy-800 mb-12">
-      ✨ ¿CÓMO TRANSFORMAMOS TU EXPERIENCIA DE COMPRA? ✨
+  <!-- Sección Características -->
+  <section id="caracteristicas" class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+    <h2 class="font-heading text-2xl sm:text-3xl font-black text-center text-navy-800 mb-10">
+      ✨ ¿CÓMO TRANSFORMAMOS TU EXPERIENCIA? ✨
     </h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
-      <div class="bg-white p-8 rounded-3xl shadow-md border-t-4 border-cyan-500">
-        <div class="text-4xl mb-4">🎯</div>
-        <h4 class="font-heading font-extrabold text-lg md:text-xl text-navy-800 mb-2">Adiós a las tablas por chat</h4>
-        <p class="text-sm md:text-base text-slate-600 leading-relaxed">No esperes horas a que el vendedor te responda por WhatsApp si la talla M es "completa o chica".</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div class="bg-white p-6 sm:p-8 rounded-3xl shadow-sm border-t-4 border-cyan-500">
+        <div class="text-3xl mb-3">🎯</div>
+        <h4 class="font-heading font-extrabold text-base text-navy-800 mb-2">Adiós tablas por chat</h4>
+        <p class="text-xs sm:text-sm text-slate-600">No esperes respuestas lentas para saber si la talla M es chica.</p>
       </div>
-      <div class="bg-white p-8 rounded-3xl shadow-md border-t-4 border-emerald-500">
-        <div class="text-4xl mb-4">🛡️</div>
-        <h4 class="font-heading font-extrabold text-lg md:text-xl text-navy-800 mb-2">Alerta Pre-Checkout</h4>
-        <p class="text-sm md:text-base text-slate-600 leading-relaxed">Te avisamos si una prenda viene reducida o amplia antes de que transfieras tu dinero.</p>
+      <div class="bg-white p-6 sm:p-8 rounded-3xl shadow-sm border-t-4 border-emerald-500">
+        <div class="text-3xl mb-3">🛡️</div>
+        <h4 class="font-heading font-extrabold text-base text-navy-800 mb-2">Alerta Pre-Checkout</h4>
+        <p class="text-xs sm:text-sm text-slate-600">Te avisamos si una prenda viene reducida antes de transferir tu dinero.</p>
       </div>
-      <div class="bg-white p-8 rounded-3xl shadow-md border-t-4 border-cyan-500">
-        <div class="text-4xl mb-4">🧵</div>
-        <h4 class="font-heading font-extrabold text-lg md:text-xl text-navy-800 mb-2">Ajuste Local (S/ 10 - S/ 15)</h4>
-        <p class="text-sm md:text-base text-slate-600 leading-relaxed">Si te queda bien de cintura pero largo de basta, un sastre verificado MiPartners lo deja listo para estrenar.</p>
+      <div class="bg-white p-6 sm:p-8 rounded-3xl shadow-sm border-t-4 border-cyan-500">
+        <div class="text-3xl mb-3">🧵</div>
+        <h4 class="font-heading font-extrabold text-base text-navy-800 mb-2">Ajuste Local MiPartners</h4>
+        <p class="text-xs sm:text-sm text-slate-600">Sastres verificados de tu distrito para solucionar el ajuste antes del envío.</p>
       </div>
-      <div class="bg-white p-8 rounded-3xl shadow-md border-t-4 border-emerald-500">
-        <div class="text-4xl mb-4">💚</div>
-        <h4 class="font-heading font-extrabold text-lg md:text-xl text-navy-800 mb-2">Tranquilidad Frente al Espejo</h4>
-        <p class="text-sm md:text-base text-slate-600 leading-relaxed">Apoya el diseño independiente peruano con 100% de certeza de que cada prenda te quedará increíble.</p>
+      <div class="bg-white p-6 sm:p-8 rounded-3xl shadow-sm border-t-4 border-emerald-500">
+        <div class="text-3xl mb-3">💚</div>
+        <h4 class="font-heading font-extrabold text-base text-navy-800 mb-2">Tranquilidad Total</h4>
+        <p class="text-xs sm:text-sm text-slate-600">Apoya el diseño independiente peruano con absoluta certeza de calce.</p>
       </div>
     </div>
   </section>
 
-  <!-- Testimonios inferiores -->
-  <section class="max-w-7xl mx-auto px-6 pb-20">
-    <h3 class="font-heading text-center text-xl md:text-2xl font-black text-navy-800 uppercase tracking-wider mb-10">
-      ✨ Compradoras en Lima que dejaron de perder dinero en devoluciones ✨
+  <!-- Preguntas Frecuentes FAQ -->
+  <section id="faq" class="max-w-4xl mx-auto px-4 sm:px-6 py-12 bg-slate-100/50 rounded-3xl my-6">
+    <h2 class="font-heading text-2xl sm:text-3xl font-black text-center text-navy-800 mb-8">Preguntas Frecuentes</h2>
+    <div class="space-y-4">
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs">
+        <h4 class="font-bold text-navy-800 text-sm sm:text-base mb-1">¿Qué diferencia hay entre la Versión A y la Versión B?</h4>
+        <p class="text-xs sm:text-sm text-slate-600">Ambas usan el mismo motor de IA, pero la Versión A prioriza la certeza analítica ("El Sabio") y la Versión B ataca la frustración del unboxing ("El Mago").</p>
+      </div>
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs">
+        <h4 class="font-bold text-navy-800 text-sm sm:text-base mb-1">¿Cómo me contactan con el sastre local?</h4>
+        <p class="text-xs sm:text-sm text-slate-600">A través de nuestra red geolocalizada MiPartners que se activa al detectar si una prenda requiere un micro-ajuste de basta o cintura.</p>
+      </div>
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs">
+        <h4 class="font-bold text-navy-800 text-sm sm:text-base mb-1">¿Es necesario descargar alguna aplicación móvil?</h4>
+        <p class="text-xs sm:text-sm text-slate-600">No, todo opera de forma ligera como Web App integrada en las marcas aliadas mediante enlaces web.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section id="testimonios" class="max-w-7xl mx-auto px-4 sm:px-6 py-12 pb-20">
+    <h3 class="font-heading text-center text-lg sm:text-xl font-black text-navy-800 uppercase tracking-wider mb-8">
+      ✨ Compradoras en Lima que dejaron de perder dinero ✨
     </h3>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="bg-white p-6 md:p-8 rounded-3xl shadow-md border border-slate-200 flex gap-5 items-center">
-        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&q=80" class="w-16 h-16 rounded-full object-cover border-2 border-cyan-500 shrink-0" alt="Camila">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200 flex gap-4 items-center">
+        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&q=80" class="w-14 h-14 rounded-full object-cover border-2 border-cyan-500 shrink-0" alt="Camila">
         <div>
-          <p class="text-sm md:text-base text-slate-600 italic leading-relaxed">"Tenía ropa nueva acumulada en mi clóset por pereza de reclamar. Ahora solo compro en tiendas con el Sello MiTallaPe."</p>
-          <p class="font-heading text-sm font-extrabold text-navy-800 mt-2">Camila R. • Jesús María</p>
+          <p class="text-xs sm:text-sm text-slate-600 italic">"Tenía ropa nueva acumulada en mi clóset por pereza de reclamar. Ahora solo compro con MiTallaPe."</p>
+          <p class="font-heading text-xs font-bold text-navy-800 mt-1">Camila R. • Jesús María</p>
         </div>
       </div>
-      <div class="bg-white p-6 md:p-8 rounded-3xl shadow-md border border-slate-200 flex gap-5 items-center">
-        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&q=80" class="w-16 h-16 rounded-full object-cover border-2 border-emerald-500 shrink-0" alt="Andrea">
+      <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200 flex gap-4 items-center">
+        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&q=80" class="w-14 h-14 rounded-full object-cover border-2 border-emerald-500 shrink-0" alt="Andrea">
         <div>
-          <p class="text-sm md:text-base text-slate-600 italic leading-relaxed">"El test me abrió los ojos. Descubrí que en jeans de Gamarra soy M pero en casacas soy L según el molde."</p>
-          <p class="font-heading text-sm font-extrabold text-navy-800 mt-2">Andrea M. • San Miguel</p>
+          <p class="text-xs sm:text-sm text-slate-600 italic">"Descubrí que en jeans soy M pero en casacas soy L según el molde exacto de la tienda."</p>
+          <p class="font-heading text-xs font-bold text-navy-800 mt-1">Andrea M. • San Miguel</p>
         </div>
       </div>
-      <div class="bg-white p-6 md:p-8 rounded-3xl shadow-md border border-slate-200 flex gap-5 items-center">
-        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&q=80" class="w-16 h-16 rounded-full object-cover border-2 border-cyan-500 shrink-0" alt="Paola">
+      <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200 flex gap-4 items-center">
+        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&q=80" class="w-14 h-14 rounded-full object-cover border-2 border-cyan-500 shrink-0" alt="Paola">
         <div>
-          <p class="text-sm md:text-base text-slate-600 italic leading-relaxed">"Pedí el micro-ajuste de basta con un sastre MiPartner y el pantalón me llegó listo para usar el fin de semana."</p>
-          <p class="font-heading text-sm font-extrabold text-navy-800 mt-2">Paola G. • Callao</p>
+          <p class="text-xs sm:text-sm text-slate-600 italic">"Pedí el micro-ajuste de basta con el sastre MiPartner y el pantalón me llegó listo para usar."</p>
+          <p class="font-heading text-xs font-bold text-navy-800 mt-1">Paola G. • Callao</p>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- FOOTER PROFESIONAL -->
+  <footer class="bg-navy-900 text-slate-400 pt-12 pb-8 border-t border-navy-800 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 text-sm">
+      <div class="space-y-3">
+        <div class="flex items-center gap-2">
+          <img src="MiTallaPe-removebg-preview.png" alt="Logo" class="w-10 h-10 object-contain">
+          <span class="font-heading text-xl font-black text-white">MiTalla<span class="text-cyan-400">Pe</span></span>
+        </div>
+        <p class="text-xs text-slate-400">Ecosistema phygital de validación de tallas, IA predictiva y red P2P de sastres para el comercio de moda.</p>
+      </div>
+      <div>
+        <h5 class="font-heading text-white font-bold mb-3 text-base">Navegación</h5>
+        <ul class="space-y-2 text-xs">
+          <li><a href="#caracteristicas" class="hover:text-cyan-400 transition">Transformación</a></li>
+          <li><a href="#faq" class="hover:text-cyan-400 transition">Preguntas Frecuentes</a></li>
+          <li><a href="#testimonios" class="hover:text-cyan-400 transition">Casos Reales</a></li>
+          <li><a href="index.html" class="hover:text-cyan-400 transition">Volver a Versión A</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-heading text-white font-bold mb-3 text-base">Solución TB1</h5>
+        <ul class="space-y-2 text-xs">
+          <li>Pasaporte Antropométrico</li>
+          <li>Semáforo Fit Match (IA)</li>
+          <li>Red de Sastres MiPartners</li>
+          <li>Moda Circular MiTwins</li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-heading text-white font-bold mb-3 text-base">Contacto & Legal</h5>
+        <p class="text-xs text-slate-400 mb-2">Lima Metropolitana, Perú</p>
+        <p class="text-xs text-slate-400 mb-3">contacto@mitallape.com</p>
+        <p class="text-[11px] text-slate-500">Cumplimiento Ley N° 29733 de Protección de Datos Personales.</p>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 pt-6 border-t border-navy-800 text-center text-xs text-slate-500 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <p>© 2026 MiTallaPe. Todos los derechos reservados.</p>
+      <p>Technical Sales and Marketing • UPC Ingeniería de Software</p>
+    </div>
+  </footer>
 
 </body>
 </html>
